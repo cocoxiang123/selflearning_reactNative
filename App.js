@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, FlatList, Alert, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { StyleSheet, View, FlatList, Alert, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import Header from './components/header'
 import TodoItem from './components/todoItem'
 import AddTodo from './components/AddTodo'
+
 
 export default function App() {
   const [todos, setTodos] = useState([
@@ -57,8 +58,11 @@ const styles = StyleSheet.create({
   },
   content: {
     padding: 50,
+    flex: 1
+
   },
   list: {
-    marginTop: 30
+    marginTop: 30,
+    flex: 1
   }
 });
